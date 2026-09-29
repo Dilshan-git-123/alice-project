@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Name Contest - Zoology Safari Adventure</title>
+    <meta
+      name="description"
+      content="A fun and friendly jungle-themed educational zoology quiz game covering 5 syllabus units across 10 specialized categories."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=JetBrains+Mono:wght@600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- App Header -->
+      <header class="app-header jungle-wood-header">
+        <div class="header-vines-left">🌿</div>
+        <div class="brand" id="brand-logo" title="Back to Categories">
+          <div class="brand-icon">🐾</div>
+          <div>
+            <span class="brand-title">GUESS THE NAME</span>
+            <span class="brand-subtitle">Zoology Safari Contest 🌿</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Header Player Badge -->
+        <div class="header-player-pill" id="header-player-pill" style="display:none;" title="Active Explorer">
+          <span class="player-pill-avatar">🤠</span>
+          <span class="player-pill-name" id="header-player-name">Contestant</span>
+        </div>
+
+        <nav class="nav-actions">
+          <button class="btn-icon" id="btn-toggle-sound" title="Toggle Sound (Mute/Unmute)">
+            🔊
+          </button>
+          <button class="btn-nav-text" id="btn-open-scoreboard" title="View Scoreboard & Stats">
+            <span>🏆</span>
+            <span>Scoreboard</span>
+          </button>
+          <button class="btn-nav-text" id="btn-open-settings" title="Settings & Management">
+            <span>⚙️</span>
+            <span>Settings</span>
+          </button>
+        </nav>
+        <div class="header-vines-right">🍃</div>
+      </header>
+
+      <!-- Main Dynamic Content Region -->
+      <main id="main-content"></main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
